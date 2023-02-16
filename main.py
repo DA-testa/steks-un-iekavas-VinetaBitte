@@ -20,8 +20,7 @@ def find_mismatch(text):
                 return i+1
             opening_brackets_stack.pop()
     if opening_brackets_stack:
-        return opening_brackets_stack[0].position
-        # or [-1] ?
+        return opening_brackets_stack[-1].position
     return "Success"
 
 
